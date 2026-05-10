@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="ar">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>XP Laptop Parts</title>
+
 <style>
 body{
     margin:0;
@@ -12,6 +12,7 @@ body{
     background:#0b0b0b;
     color:white;
 }
+
 header{
     background:#111;
     padding:20px 40px;
@@ -20,72 +21,106 @@ header{
     align-items:center;
     border-bottom:2px solid #c40000;
 }
+
 .logo{
     color:#fff;
-    font-size:32px;
+    font-size:28px;
     font-weight:bold;
 }
-.logo span{color:#ff0000;}
+
+.logo span{
+    color:#ff0000;
+}
+
 nav a{
     color:white;
-    margin:0 15px;
+    margin:0 10px;
     text-decoration:none;
+    font-size:14px;
 }
+
 .hero{
     padding:80px 40px;
     background:linear-gradient(to right,#000,#220000);
 }
+
 .hero h1{
-    font-size:52px;
+    font-size:48px;
     color:#ff1a1a;
+    margin:0;
 }
+
 .hero p{
-    font-size:22px;
+    font-size:20px;
 }
+
 .btn{
     display:inline-block;
     background:#ff0000;
     color:white;
-    padding:15px 30px;
+    padding:12px 25px;
     text-decoration:none;
     border-radius:6px;
     margin-top:20px;
 }
+
 .products{
     padding:40px;
 }
+
+.products h2{
+    color:#ff2d2d;
+    margin-bottom:20px;
+}
+
 .grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap:20px;
 }
+
 .card{
     background:#151515;
     border:1px solid #aa0000;
-    padding:20px;
+    padding:15px;
     border-radius:10px;
+    text-align:center;
 }
+
+.card img{
+    width:100%;
+    border-radius:8px;
+}
+
 .card h3{
     color:#ff2d2d;
+    margin:10px 0 5px;
 }
+
+.card p{
+    margin:5px 0;
+}
+
 footer{
     background:#111;
-    padding:30px;
+    padding:20px;
     text-align:center;
     border-top:2px solid #c40000;
+    font-size:14px;
 }
 </style>
+
 </head>
+
 <body>
 
 <header>
 <div class="logo">XP <span>LAPTOP PARTS</span></div>
+
 <nav>
-<a href="#home">الرئيسية</a>
-<a href="#batteries">البطاريات</a>
-<a href="#screens">الشاشات</a>
-<a href="#chargers">الشواحن</a>
-<a href="#contact">تواصل معنا</a>
+<a href="#batteries">بطاريات</a>
+<a href="#screens">شاشات</a>
+<a href="#chargers">شواحن</a>
 </nav>
 </header>
 
@@ -95,57 +130,53 @@ footer{
 <a class="btn" href="https://wa.me/201023431095">تواصل واتساب</a>
 </section>
 
+<!-- البطاريات -->
 <section class="products" id="batteries">
-<h2>البطاريات</h2>
+<h2>🔋 البطاريات</h2>
 
 <div class="grid">
 
 <div class="card">
-<img src="images/battery1.jpg" width="100%">
+<img src="images/battery1.jpg">
 <h3>بطارية HP</h3>
-<p>بطارية أصلية</p>
+<p>أصلية - جودة عالية</p>
 <p><strong>450 EGP</strong></p>
 </div>
 
 <div class="card">
-<img src="images/battery2.jpg" width="100%">
+<img src="images/battery2.jpg">
 <h3>بطارية Dell</h3>
-<p>جودة ممتازة</p>
+<p>أداء ممتاز</p>
 <p><strong>700 EGP</strong></p>
 </div>
 
 </div>
 </section>
 
+<!-- الشاشات -->
 <section class="products" id="screens">
-
-<h2>الشاشات</h2>
+<h2>🖥️ الشاشات</h2>
 
 <div class="grid">
 
 <div class="card">
-
-<img src="images/screen1.jpg" width="100%">
-
+<img src="images/screen1.jpg">
 <h3>شاشة 15.6 Slim</h3>
-
 <p>Full HD</p>
-
-<p><strong>600 to 10500 EGP</strong></p>
-
+<p><strong>1050 EGP</strong></p>
 </div>
 
 </div>
-
 </section>
 
+<!-- الشواحن -->
 <section class="products" id="chargers">
-<h2>الشواحن</h2>
+<h2>🔌 الشواحن</h2>
 
 <div class="grid">
 
 <div class="card">
-<img src="images/charger1.jpg" width="100%">
+<img src="images/charger1.jpg">
 <h3>شاحن Lenovo</h3>
 <p>65W Original</p>
 <p><strong>300 EGP</strong></p>
@@ -154,17 +185,30 @@ footer{
 </div>
 </section>
 
+<!-- أخرى -->
+<section class="products">
+<h2>🧰 قطع غيار أخرى</h2>
+
+<div class="grid">
+
 <div class="card">
-<h3>قطع غيار أخرى</h3>
-<p>كيبوردات ومراوح وقطع داخلية</p>
-<p><strong>أسعار مميزة</strong></p>
+<h3>كيبوردات</h3>
+<p>جميع الأنواع</p>
+<p><strong>أسعار مختلفة</strong></p>
 </div>
+
+<div class="card">
+<h3>مراوح</h3>
+<p>تبريد قوي</p>
+<p><strong>حسب الموديل</strong></p>
+</div>
+
 </div>
 </section>
 
 <footer>
-<p>العنوان: 60 الخليفة المأمون - مصر الجديدة - مول كوين - الدور الثاني</p>
-<p>واتساب: 01023431095</p>
+<p>📍 مصر الجديدة - مول كوين - الدور الثاني</p>
+<p>📞 01023431095</p>
 <p>© XP Laptop Parts 2026</p>
 </footer>
 

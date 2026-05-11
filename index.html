@@ -22,7 +22,7 @@
             overflow-x: hidden;
         }
 
-        /* ===== HEADER الحتة اللي فوق ===== */
+        /* ===== HEADER ===== */
         header {
             display: flex;
             justify-content: space-between;
@@ -58,12 +58,12 @@
         }
         nav a:hover { color: var(--main-red); }
 
-        /* ===== HERO الواجهة المبهرة ===== */
+        /* ===== HERO ===== */
         .hero {
             text-align: center;
             padding: 100px 20px;
             background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), 
-                        url('https://i.makeagif.com/media/10-21-2015/N_E99m.gif'); /* خلفية البرق */
+                        url('https://i.makeagif.com/media/10-21-2015/N_E99m.gif'); 
             background-size: cover;
             background-position: center;
             border-bottom: 2px solid var(--main-red);
@@ -88,7 +88,7 @@
             50% { opacity: 0.5; transform: scale(1.2) rotate(10deg); color: #ffeb3b; }
         }
 
-        /* ===== MAIN CATEGORIES الكروت ===== */
+        /* ===== CATEGORIES ===== */
         .categories-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -117,82 +117,22 @@
 
         .cat-card i { font-size: 40px; display: block; margin-bottom: 10px; }
 
-        /* ===== PAGES & SUB-SECTIONS ===== */
-        .page-section {
-            display: none;
-            padding: 60px 5%;
-            min-height: 80vh;
-        }
-
+        .page-section { display: none; padding: 60px 5%; min-height: 80vh; }
         .page-section:target { display: block; }
 
-        .brand-section {
-            margin-bottom: 50px;
-            padding: 20px;
-            background: rgba(255,255,255,0.02);
-            border-radius: 20px;
-        }
+        .brand-section { margin-bottom: 50px; padding: 20px; background: rgba(255,255,255,0.02); border-radius: 20px; }
+        .brand-title { font-size: 24px; color: var(--main-red); border-right: 5px solid var(--main-red); padding-right: 15px; margin-bottom: 25px; }
 
-        .brand-title {
-            font-size: 24px;
-            color: var(--main-red);
-            border-right: 5px solid var(--main-red);
-            padding-right: 15px;
-            margin-bottom: 25px;
-        }
-
-        /* ===== PRODUCTS GRID ===== */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-            gap: 20px;
-        }
-
-        .product-card {
-            background: #111;
-            border-radius: 12px;
-            padding: 15px;
-            text-align: center;
-            border: 1px solid #333;
-            transition: 0.3s;
-        }
-
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+        .product-card { background: #111; border-radius: 12px; padding: 15px; text-align: center; border: 1px solid #333; transition: 0.3s; }
         .product-card:hover { border-color: var(--main-red); box-shadow: 0 0 10px rgba(255,0,0,0.2); }
+        .product-card img { width: 100%; height: 150px; object-fit: contain; border-radius: 8px; background: #fff; margin-bottom: 10px; }
 
-        .product-card img {
-            width: 100%;
-            height: 150px;
-            object-fit: contain;
-            border-radius: 8px;
-            background: #fff;
-            margin-bottom: 10px;
-        }
+        .price { display: block; color: #25d366; font-size: 18px; font-weight: bold; margin: 10px 0; }
+        .btn-buy { display: block; background: #25d366; color: white; text-decoration: none; padding: 10px; border-radius: 5px; font-size: 14px; font-weight: bold; }
+        .btn-buy:hover { background: #1ebe57; box-shadow: 0 0 10px #25d366; }
 
-        .price {
-            display: block;
-            color: #25d366;
-            font-size: 18px;
-            font-weight: bold;
-            margin: 10px 0;
-        }
-
-        .btn-buy {
-            display: block;
-            background: #25d366;
-            color: white;
-            text-decoration: none;
-            padding: 8px;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 40px;
-            background: #000;
-            border-top: 2px solid var(--main-red);
-            margin-top: 50px;
-        }
+        footer { text-align: center; padding: 40px; background: #000; border-top: 2px solid var(--main-red); margin-top: 50px; }
     </style>
 </head>
 <body>
@@ -209,7 +149,6 @@
     </nav>
 </header>
 
-<!-- الصفحة الرئيسية -->
 <div id="home">
     <section class="hero">
         <div class="bolt-flash">⚡</div>
@@ -226,76 +165,71 @@
     </div>
 </div>
 
-<!-- محتوى البطاريات (كما هو في كودك) -->
 <section id="batteries" class="page-section">
     <center><h1 style="color: #ff2d2d; margin-bottom: 40px;">مخزن البطاريات</h1></center>
     <div class="brand-section">
         <h2 class="brand-title">LENOVO</h2>
         <div class="grid">
-            <div class="product-card"><img src="https://m.media-amazon.com/images/I/61hHyKaRMfL._AC_UF350,350_QL80_.jpg"><h3>IdeaPad 320</h3><span class="price">800 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
-            <div class="product-card"><img src="https://www.uaebattery.ae/lenovo-ar/pic_big_Zoom/G400S-2.jpg"><h3>Lenovo G50-70</h3><span class="price">700 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
+            <div class="product-card"><img src="https://m.media-amazon.com/images/I/61hHyKaRMfL._AC_UF350,350_QL80_.jpg"><h3>IdeaPad 320</h3><span class="price">800 EGP</span><a href="https://wa.me/201023431095?text=استفسار عن بطارية Lenovo IdeaPad 320" class="btn-buy">طلب واتساب</a></div>
+            <div class="product-card"><img src="https://www.uaebattery.ae/lenovo-ar/pic_big_Zoom/G400S-2.jpg"><h3>Lenovo G50-70</h3><span class="price">700 EGP</span><a href="https://wa.me/201023431095?text=استفسار عن بطارية Lenovo G50-70" class="btn-buy">طلب واتساب</a></div>
         </div>
     </div>
     <div class="brand-section">
         <h2 class="brand-title">DELL</h2>
         <div class="grid">
-            <div class="product-card"><img src="https://www.laptopbattery.com.sg/dell/pic_big_Zoom/WDX0R-PN-1.jpg"><h3>Dell Inspiron 5570</h3><span class="price">650 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
-            <div class="product-card"><img src="https://batolstore.com/wp-content/uploads/2025/10/battery-5558.jpg"><h3>DELL 5558</h3><span class="price">600 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
+            <div class="product-card"><img src="https://www.laptopbattery.com.sg/dell/pic_big_Zoom/WDX0R-PN-1.jpg"><h3>Dell Inspiron 5570</h3><span class="price">1250 EGP</span><a href="https://wa.me/201023431095?text=استفسار عن بطارية Dell Inspiron 5570" class="btn-buy">طلب واتساب</a></div>
+            <div class="product-card"><img src="https://batolstore.com/wp-content/uploads/2025/10/battery-5558.jpg"><h3>DELL 5558</h3><span class="price">600 EGP</span><a href="https://wa.me/201023431095?text=استفسار عن بطارية DELL 5558" class="btn-buy">طلب واتساب</a></div>
         </div>
     </div>
 </section>
 
-<!-- محتوى الشاشات (كما هو في كودك كاملاً) -->
 <section id="screens" class="page-section">
     <center><h1 style="color: #ff2d2d; margin-bottom: 40px;">قسم الشاشات</h1></center>
     <div class="grid">
-        <div class="product-card"><img src="https://www.xfurbish.com/image/cache/wkseller/14673/NT156WHM-N42_-400x400w.webp"><h3>15.6 Slim 30 Pin</h3><span class="price">950 EGP</span><a href="..." class="btn-buy">طلب</a></div>
-        <div class="product-card"><img src="https://cdn11.bigcommerce.com/s-vy9cg/images/stencil/608x608/products/648391/74674300/11030__90011.1758412602.jpg"><h3>15.6 LED 40 PIN</h3><span class="price">600 EGP</span><a href="..." class="btn-buy">طلب</a></div>
-        <div class="product-card"><img src="https://www.thebrandstore.pk/media/catalog/product/cache/c6a99b8cca15068ddf9e47e30b9d54a9/l/e/led_15.6_40_pin_slim_nt156whm-n10_by_thebrandstore.pk_1.jpg"><h3>15.6 SLIM 40 PIN</h3><span class="price">900 EGP</span><a href="..." class="btn-buy">طلب</a></div>
-        <div class="product-card"><img src="https://c1.neweggimages.com/NeweggImage/productimage/BH5UD2402040KWQ4Y7D.jpg"><h3>15.6 IPS 30 PIN FHD</h3><span class="price">1600 EGP</span><a href="..." class="btn-buy">طلب</a></div>
-        <div class="product-card"><img src="https://m.media-amazon.com/images/I/61ozzCQ-AaL._AC_UF894,1000_QL80_.jpg"><h3>15.6 IPS 40 PIN 144HZ</h3><span class="price">2700 EGP</span><a href="..." class="btn-buy">طلب</a></div>
-        <div class="product-card"><img src="https://www.laptopscreen.com/img/screens/1000/B140XTN02.E.jpg"><h3>14.0 SLIM 30 PIN HD</h3><span class="price">925 EGP</span><a href="..." class="btn-buy">طلب</a></div>
-        <div class="product-card"><img src="https://deprimesolutions.co.ke/wp-content/uploads/2021/03/new-laptop-screen-in-Nairobi-600x600.jpg"><h3>14.0 SLIM 40 PIN HD</h3><span class="price">950 EGP</span><a href="..." class="btn-buy">طلب</a></div>
-        <div class="product-card"><img src="https://rondamo.co.ke/photok/534132.jpg"><h3>14.0 SLIM IPS 30 PIN HD</h3><span class="price">1450 EGP</span><a href="..." class="btn-buy">طلب</a></div>
-        <div class="product-card"><img src="https://lansotechsolutions.co.ke/wp-content/uploads/2023/10/61zqWK1NyL.jpg"><h3>14.0 SLIM IPS 30 PIN FHD</h3><span class="price">1600 EGP</span><a href="..." class="btn-buy">طلب</a></div>
-        <div class="product-card"><img src="https://www.pro-lcds.com/554885-large_default/lcd-screen-for-hp-compaq-pavilion-g4-1000-s%C3%A9rie-140-1366x768.jpg"><h3>14.0 LED 40 PIN HD</h3><span class="price">750 EGP</span><a href="..." class="btn-buy">طلب</a></div>
-        <div class="product-card"><img src="https://i.ebayimg.com/images/g/KXMAAOSwgodnOBm3/s-l400.jpg"><h3>16.0 IPS 30 PIN 60HZ</h3><span class="price">4900 EGP</span><a href="..." class="btn-buy">طلب</a></div>
-        <div class="product-card"><img src="https://m.media-amazon.com/images/I/610ItLk4DJL._AC_UF894,1000_QL80_.jpg"><h3>16.0 IPS 40 PIN 165HZ</h3><span class="price">5100 EGP</span><a href="..." class="btn-buy">طلب</a></div>
-        <div class="product-card"><img src="https://m.media-amazon.com/images/I/61OvwN556AL.jpg"><h3>14.0 ips backbord 30 pin fhd </h3><span class="price">1850 EGP</span><a href="..." class="btn-buy">طلب</a></div>
-        <div class="product-card"><img src="https://www.ubuy.com.eg/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNDFldmw3alVKWkwuX1NTNDAwXy5qcGc.jpg"><h3>15.0 ips backbord 30 pin fhd </h3><span class="price">2000 EGP</span><a href="..." class="btn-buy">طلب</a></div>
+        <div class="product-card"><img src="https://www.xfurbish.com/image/cache/wkseller/14673/NT156WHM-N42_-400x400w.webp"><h3>15.6 Slim 30 Pin</h3><span class="price">950 EGP</span><a href="https://wa.me/201023431095?text=طلب شاشة 15.6 Slim 30 Pin" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://cdn11.bigcommerce.com/s-vy9cg/images/stencil/608x608/products/648391/74674300/11030__90011.1758412602.jpg"><h3>15.6 LED 40 PIN</h3><span class="price">600 EGP</span><a href="https://wa.me/201023431095?text=طلب شاشة 15.6 LED 40 PIN" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://www.thebrandstore.pk/media/catalog/product/cache/c6a99b8cca15068ddf9e47e30b9d54a9/l/e/led_15.6_40_pin_slim_nt156whm-n10_by_thebrandstore.pk_1.jpg"><h3>15.6 SLIM 40 PIN</h3><span class="price">900 EGP</span><a href="https://wa.me/201023431095?text=طلب شاشة 15.6 SLIM 40 PIN" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://c1.neweggimages.com/NeweggImage/productimage/BH5UD2402040KWQ4Y7D.jpg"><h3>15.6 IPS 30 PIN FHD</h3><span class="price">1600 EGP</span><a href="https://wa.me/201023431095?text=طلب شاشة 15.6 IPS 30 PIN FHD" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://m.media-amazon.com/images/I/61ozzCQ-AaL._AC_UF894,1000_QL80_.jpg"><h3>15.6 IPS 40 PIN 144HZ</h3><span class="price">2700 EGP</span><a href="https://wa.me/201023431095?text=طلب شاشة 15.6 IPS 40 PIN 144HZ" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://www.laptopscreen.com/img/screens/1000/B140XTN02.E.jpg"><h3>14.0 SLIM 30 PIN HD</h3><span class="price">925 EGP</span><a href="https://wa.me/201023431095?text=طلب شاشة 14.0 SLIM 30 PIN HD" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://deprimesolutions.co.ke/wp-content/uploads/2021/03/new-laptop-screen-in-Nairobi-600x600.jpg"><h3>14.0 SLIM 40 PIN HD</h3><span class="price">950 EGP</span><a href="https://wa.me/201023431095?text=طلب شاشة 14.0 SLIM 40 PIN HD" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://rondamo.co.ke/photok/534132.jpg"><h3>14.0 SLIM IPS 30 PIN HD</h3><span class="price">1450 EGP</span><a href="https://wa.me/201023431095?text=طلب شاشة 14.0 SLIM IPS 30 PIN HD" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://lansotechsolutions.co.ke/wp-content/uploads/2023/10/61zqWK1NyL.jpg"><h3>14.0 SLIM IPS 30 PIN FHD</h3><span class="price">1600 EGP</span><a href="https://wa.me/201023431095?text=طلب شاشة 14.0 SLIM IPS 30 PIN FHD" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://www.pro-lcds.com/554885-large_default/lcd-screen-for-hp-compaq-pavilion-g4-1000-s%C3%A9rie-140-1366x768.jpg"><h3>14.0 LED 40 PIN HD</h3><span class="price">750 EGP</span><a href="https://wa.me/201023431095?text=طلب شاشة 14.0 LED 40 PIN HD" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://i.ebayimg.com/images/g/KXMAAOSwgodnOBm3/s-l400.jpg"><h3>16.0 IPS 30 PIN 60HZ</h3><span class="price">4900 EGP</span><a href="https://wa.me/201023431095?text=طلب شاشة 16.0 IPS 30 PIN 60HZ" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://m.media-amazon.com/images/I/610ItLk4DJL._AC_UF894,1000_QL80_.jpg"><h3>16.0 IPS 40 PIN 165HZ</h3><span class="price">5100 EGP</span><a href="https://wa.me/201023431095?text=طلب شاشة 16.0 IPS 40 PIN 165HZ" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://m.media-amazon.com/images/I/61OvwN556AL.jpg"><h3>14.0 ips backbord 30 pin fhd </h3><span class="price">1850 EGP</span><a href="https://wa.me/201023431095?text=طلب شاشة 14.0 ips backbord 30 pin" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://www.ubuy.com.eg/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNDFldmw3alVKWkwuX1NTNDAwXy5qcGc.jpg"><h3>15.0 ips backbord 30 pin fhd </h3><span class="price">2000 EGP</span><a href="https://wa.me/201023431095?text=طلب شاشة 15.0 ips backbord 30 pin" class="btn-buy">طلب واتساب</a></div>
     </div>
 </section>
 
-<!-- كيبوردات -->
 <section id="keyboards" class="page-section">
     <center><h1 style="color: #ff2d2d; margin-bottom: 40px;">قسم الكيبوردات</h1></center>
     <div class="grid">
-        <div class="product-card"><img src="https://kimostore.net/cdn/shop/files/DellInspiron153542-5558-5559LaptopInternalKeyboard_2.jpg?v=1771937426"><h3>Keyboard Dell 3542 5558 5559 3567 </h3><span class="price">350 EGP</span><a href="..." class="btn-buy">واتساب</a></div>
-        <div class="product-card"><img src="https://kimostore.net/cdn/shop/files/DellInspiron5000-5565-5567LaptopInternalKeyboard_1.jpg?v=1759589641?v=1771937426"><h3>Keyboard Dell ins 5570=5567=g3=g5 </h3><span class="price">350 EGP</span><a href="..." class="btn-buy">واتساب</a></div>
+        <div class="product-card"><img src="https://kimostore.net/cdn/shop/files/DellInspiron153542-5558-5559LaptopInternalKeyboard_2.jpg?v=1771937426"><h3>Keyboard Dell 3542 5558 5559 3567 </h3><span class="price">350 EGP</span><a href="https://wa.me/201023431095?text=طلب كيبورد Dell 3542" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://kimostore.net/cdn/shop/files/DellInspiron5000-5565-5567LaptopInternalKeyboard_1.jpg?v=1759589641?v=1771937426"><h3>Keyboard Dell ins 5570=5567=g3=g5 </h3><span class="price">350 EGP</span><a href="https://wa.me/201023431095?text=طلب كيبورد Dell 5570" class="btn-buy">طلب واتساب</a></div>
     </div>
 </section>
 
-<!-- فانات -->
 <section id="fans" class="page-section">
     <center><h1 style="color: #ff2d2d; margin-bottom: 40px;">قسم الفانات</h1></center>
     <div class="grid">
-        <div class="product-card"><img src="https://rukminim2.flixcart.com/image/480/640/kosxzm80/laptop-heat-sink/o/f/q/new-for-dell-inspiron-15-3521-5535-laptop-cpu-cooling-fan-w5j7-original-imafen2h9kzh3n4f.jpeg?q=20"><h3>Fan Dell Inspiron 15 3521 = HP 15-G </h3><span class="price">200 EGP</span><a href="..." class="btn-buy">واتساب</a></div>
+        <div class="product-card"><img src="https://rukminim2.flixcart.com/image/480/640/kosxzm80/laptop-heat-sink/o/f/q/new-for-dell-inspiron-15-3521-5535-laptop-cpu-cooling-fan-w5j7-original-imafen2h9kzh3n4f.jpeg?q=20"><h3>Fan Dell Inspiron 15 3521 = HP 15-G </h3><span class="price">200 EGP</span><a href="https://wa.me/201023431095?text=طلب فانة Dell 3521" class="btn-buy">طلب واتساب</a></div>
     </div>
 </section>
 
-<!-- إكسسوارات -->
 <section id="accessories" class="page-section">
     <center><h1 style="color: #ff2d2d; margin-bottom: 40px;">إكسسوارات وعدد</h1></center>
     <div class="grid">
-        <div class="product-card"><img src="https://cdn11.bigcommerce.com/s-am5zt8xfow/images/stencil/original/products/3700/11965/803461517_max__09991.1718293639.jpg"><h3>مفك كهرباء شحن تايب سي ممتاز للابات و الموبايلات </h3><span class="price">1000 EGP</span><a href="..." class="btn-buy">واتساب</a></div>
-        <div class="product-card"><img src="https://adecil.fbitsstatic.net/img/p/fita-dupla-face-espuma-scotch-mount-4026-19-mm-x-20-m-73372/257992.jpg?w=420&h=420&v=no-change&qs=ignore"><h3>دبل فيس للابتوب  </h3><span class="price">1000 EGP</span><a href="..." class="btn-buy">واتساب</a></div>
+        <div class="product-card"><img src="https://cdn11.bigcommerce.com/s-am5zt8xfow/images/stencil/original/products/3700/11965/803461517_max__09991.1718293639.jpg"><h3>مفك كهرباء شحن تايب سي </h3><span class="price">1000 EGP</span><a href="https://wa.me/201023431095?text=طلب مفك كهرباء شحن" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://adecil.fbitsstatic.net/img/p/fita-dupla-face-espuma-scotch-mount-4026-19-mm-x-20-m-73372/257992.jpg?w=420&h=420&v=no-change&qs=ignore"><h3>دبل فيس للابتوب </h3><span class="price">1000 EGP</span><a href="https://wa.me/201023431095?text=طلب دبل فيس لابتوب" class="btn-buy">طلب واتساب</a></div>
     </div>
 </section>
 
 <footer>
     <p>📍 مصر الجديدة - مول كوين - الدور الثاني</p>
     <p style="color: red; font-weight: bold;">⚡ XP LAPTOP PARTS ⚡</p>
-    <p>© 2024 XP Store</p>
+    <p>© 2001 XP Store</p>
 </footer>
 
 </body>

@@ -1,94 +1,214 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
-
+<html lang="ar">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>XP Laptop Parts</title>
 
-<link rel="stylesheet" href="style.css">
+<style>
+body{
+    margin:0;
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(circle at top,#1a0000,#000);
+    color:white;
+}
+
+/* ===== HEADER ===== */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    position:sticky;
+    top:0;
+    border-bottom:1px solid #ff0000;
+}
+
+.logo{
+    font-size:26px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#ff2d2d;
+}
+
+nav a{
+    color:white;
+    margin:0 10px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ff2d2d;
+}
+
+/* ===== HERO ===== */
+.hero{
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:55px;
+    background: linear-gradient(45deg,#ff0000,#ff6a00);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin:0;
+}
+
+.hero p{
+    font-size:18px;
+    opacity:0.8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:linear-gradient(45deg,#ff0000,#ff5e00);
+    color:white;
+    border-radius:30px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* ===== PRODUCTS ===== */
+.products{
+    padding:60px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.products h2{
+    text-align:center;
+    color:#ff3b3b;
+    margin-bottom:30px;
+    font-size:28px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+/* CARD */
+.card{
+    background: rgba(255,255,255,0.05);
+    border:1px solid rgba(255,0,0,0.3);
+    border-radius:15px;
+    padding:15px;
+    text-align:center;
+    transition:0.3s;
+    backdrop-filter: blur(8px);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#ff0000;
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+.card h3{
+    color:#ff4040;
+    margin:10px 0 5px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    text-align:center;
+    padding:25px;
+    background:#0a0a0a;
+    border-top:1px solid #ff0000;
+    margin-top:40px;
+    font-size:14px;
+}
+</style>
 
 </head>
 
 <body>
 
 <header>
-
-<div class="logo">
-XP <span>LAPTOP PARTS</span>
-</div>
-
+<div class="logo">XP <span>LAPTOP PARTS</span></div>
 <nav>
-<a href="index.html">الرئيسية</a>
-<a href="batteries.html">البطاريات</a>
-<a href="screens.html">الشاشات</a>
-<a href="chargers.html">الشواحن</a>
-<a href="keyboards.html">الكيبوردات</a>
+<a href="#batteries">بطاريات</a>
+<a href="#screens">شاشات</a>
+<a href="#chargers">شواحن</a>
 </nav>
-
 </header>
 
 <section class="hero">
-
 <h1>XP Laptop Parts</h1>
-
-<p>
-متخصصون في بيع قطع غيار اللاب توب الأصلية
-</p>
-
-<a class="btn"
-href="https://wa.me/201023431095">
-تواصل واتساب
-</a>
-
-<a class="btn call"
-href="tel:0222560352">
-اتصال مباشر
-</a>
-
+<p>أفضل قطع غيار لابتوب بجودة عالية وسعر مناسب</p>
+<a class="btn" href="https://wa.me/201023431095">تواصل واتساب</a>
 </section>
 
-<section class="products">
-
-<h2>الأقسام الرئيسية</h2>
-
+<section class="products" id="batteries">
+<h2>🔋 البطاريات</h2>
 <div class="grid">
 
-<a href="batteries.html" class="card">
-
+<div class="card">
 <img src="images/battery1.jpg">
+<h3>بطارية HP</h3>
+<p>أصلية - جودة عالية</p>
+<p><strong>450 EGP</strong></p>
+</div>
 
-<h3>البطاريات</h3>
+<div class="card">
+<img src="images/battery2.jpg">
+<h3>بطارية Dell</h3>
+<p>أداء قوي</p>
+<p><strong>700 EGP</strong></p>
+</div>
 
-<p>
-أكثر من 100 بطارية
-</p>
+</div>
+</section>
 
-</a>
+<section class="products" id="screens">
+<h2>🖥️ الشاشات</h2>
+<div class="grid">
 
-<a href="screens.html" class="card">
-
+<div class="card">
 <img src="images/screen1.jpg">
+<h3>شاشة 15.6</h3>
+<p>Full HD Slim</p>
+<p><strong>1050 EGP</strong></p>
+</div>
 
-<h3>الشاشات</h3>
+</div>
+</section>
 
-<p>
-جميع أنواع الشاشات
-</p>
+<section class="products" id="chargers">
+<h2>🔌 الشواحن</h2>
+<div class="grid">
 
-</a>
-
-<a href="chargers.html" class="card">
-
+<div class="card">
 <img src="images/charger1.jpg">
+<h3>شاحن Lenovo</h3>
+<p>65W Original</p>
+<p><strong>300 EGP</strong></p>
+</div>
 
-<h3>الشواحن</h3>
+</div>
+</section>
 
-<p>
-شواحن أصلية
-</p>
+<footer>
+📍 مصر الجديدة - مول كوين - الدور الثاني <br>
+📞 01023431095
+</footer>
 
-</a>
-
-<a href="keyboards.html" class="card">
+</body>
+</html>

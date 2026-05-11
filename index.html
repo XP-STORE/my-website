@@ -1,213 +1,269 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>XP Laptop Parts</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XP Laptop Parts - المتجر الرئيسي</title>
 
-<style>
-body{
-    margin:0;
-    font-family: 'Arial', sans-serif;
-    background: radial-gradient(circle at top,#1a0000,#000);
-    color:white;
-}
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: radial-gradient(circle at top, #1a0000, #000);
+            color: white;
+            scroll-behavior: smooth;
+        }
 
-/* ===== HEADER ===== */
-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 40px;
-    background: rgba(0,0,0,0.6);
-    backdrop-filter: blur(10px);
-    position:sticky;
-    top:0;
-    border-bottom:1px solid #ff0000;
-}
+        /* ===== HEADER ===== */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(15px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid #ff0000;
+        }
 
-.logo{
-    font-size:26px;
-    font-weight:bold;
-}
+        .logo { font-size: 24px; font-weight: bold; letter-spacing: 1px; }
+        .logo span { color: #ff2d2d; }
 
-.logo span{
-    color:#ff2d2d;
-}
+        nav a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
 
-nav a{
-    color:white;
-    margin:0 10px;
-    text-decoration:none;
-    transition:0.3s;
-}
+        nav a:hover { color: #ff2d2d; }
 
-nav a:hover{
-    color:#ff2d2d;
-}
+        /* ===== HERO SECTION ===== */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: url('https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+            background-blend-mode: overlay;
+            background-color: rgba(0,0,0,0.7);
+        }
 
-/* ===== HERO ===== */
-.hero{
-    text-align:center;
-    padding:100px 20px;
-}
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #ff0000, #ff6a00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
 
-.hero h1{
-    font-size:55px;
-    background: linear-gradient(45deg,#ff0000,#ff6a00);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-    margin:0;
-}
+        /* ===== CATEGORIES SECTION (The "Entry" Pages) ===== */
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 50px 5%;
+            max-width: 1200px;
+            margin: auto;
+        }
 
-.hero p{
-    font-size:18px;
-    opacity:0.8;
-}
+        .category-card {
+            position: relative;
+            height: 250px;
+            border-radius: 20px;
+            overflow: hidden;
+            cursor: pointer;
+            border: 1px solid rgba(255, 0, 0, 0.3);
+            transition: 0.4s;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-.btn{
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 25px;
-    background:linear-gradient(45deg,#ff0000,#ff5e00);
-    color:white;
-    border-radius:30px;
-    text-decoration:none;
-    transition:0.3s;
-}
+        .category-card:hover {
+            transform: scale(1.03);
+            border-color: #ff0000;
+            box-shadow: 0 10px 30px rgba(255, 0, 0, 0.2);
+        }
 
-.btn:hover{
-    transform:scale(1.05);
-}
+        .category-card img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+            opacity: 0.5;
+            transition: 0.4s;
+        }
 
-/* ===== PRODUCTS ===== */
-.products{
-    padding:60px 20px;
-    max-width:1100px;
-    margin:auto;
-}
+        .category-card:hover img { opacity: 0.8; }
 
-.products h2{
-    text-align:center;
-    color:#ff3b3b;
-    margin-bottom:30px;
-    font-size:28px;
-}
+        .category-card h2 {
+            position: relative;
+            z-index: 2;
+            color: #fff;
+            font-size: 32px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+        }
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-}
+        /* ===== PRODUCTS SECTION (Hidden by default or shown on click) ===== */
+        .page-section {
+            padding: 80px 5%;
+            display: none; /* مخفي وسيظهر عند الضغط */
+        }
 
-/* CARD */
-.card{
-    background: rgba(255,255,255,0.05);
-    border:1px solid rgba(255,0,0,0.3);
-    border-radius:15px;
-    padding:15px;
-    text-align:center;
-    transition:0.3s;
-    backdrop-filter: blur(8px);
-}
+        .page-section:target {
+            display: block; /* يظهر القسم عند الضغط على الرابط */
+        }
 
-.card:hover{
-    transform:translateY(-8px);
-    border-color:#ff0000;
-}
+        .section-title {
+            text-align: center;
+            font-size: 35px;
+            color: #ff3b3b;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #ff3b3b;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
 
-.card img{
-    width:100%;
-    border-radius:10px;
-}
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+        }
 
-.card h3{
-    color:#ff4040;
-    margin:10px 0 5px;
-}
+        .product-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: 0.3s;
+        }
 
-/* ===== FOOTER ===== */
-footer{
-    text-align:center;
-    padding:25px;
-    background:#0a0a0a;
-    border-top:1px solid #ff0000;
-    margin-top:40px;
-    font-size:14px;
-}
-</style>
+        .product-card:hover { background: rgba(255, 255, 255, 0.1); border-color: #ff0000; }
+        .product-card img { width: 100%; height: 180px; object-fit: contain; margin-bottom: 15px; }
+        .price { color: #00ff88; font-size: 20px; font-weight: bold; display: block; margin: 10px 0; }
 
+        .btn-whatsapp {
+            display: block;
+            background: #25d366;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #050505;
+            border-top: 1px solid #ff0000;
+        }
+    </style>
 </head>
-
 <body>
 
 <header>
-<div class="logo">XP <span>LAPTOP PARTS</span></div>
-<nav>
-<a href="#batteries">بطاريات</a>
-<a href="#screens">شاشات</a>
-<a href="#chargers">شواحن</a>
-</nav>
+    <div class="logo">XP <span>LAPTOP PARTS</span></div>
+    <nav>
+        <a href="#">الرئيسية</a>
+        <a href="#batteries-page">البطاريات</a>
+        <a href="#screens-page">الشاشات</a>
+        <a href="#chargers-page">الشواحن</a>
+    </nav>
 </header>
 
+<!-- الصفحة الرئيسية (الأقسام) -->
 <section class="hero">
-<h1>XP Laptop Parts</h1>
-<p>أفضل قطع غيار لابتوب بجودة عالية وسعر مناسب</p>
-<a class="btn" href="https://wa.me/201023431095">تواصل واتساب</a>
+    <h1>قطع غيار لابتوب أصلية</h1>
+    <p>اختر القسم الذي تبحث عنه وتصفح أفضل الأسعار في مصر</p>
 </section>
 
-<section class="products" id="batteries">
-<h2>🔋 البطاريات</h2>
-<div class="grid">
+<div class="categories-grid">
+    <!-- كارت قسم البطاريات -->
+    <a href="#batteries-page" class="category-card">
+        <img src="https://images.unsplash.com/photo-1591405351990-4726e331f141?auto=format&fit=crop&w=500&q=80" alt="Batteries">
+        <h2>🔋 البطاريات</h2>
+    </a>
 
-<div class="card">
-<img src="battery1.jpg">
-<h3>بطارية HP</h3>
-<p>أصلية - جودة عالية</p>
-<p><strong>500 TO 1900 EGP</strong></p>
+    <!-- كارت قسم الشاشات -->
+    <a href="#screens-page" class="category-card">
+        <img src="https://images.unsplash.com/photo-1547119957-637f8679db1e?auto=format&fit=crop&w=500&q=80" alt="Screens">
+        <h2>🖥️ الشاشات</h2>
+    </a>
+
+    <!-- كارت قسم الشواحن -->
+    <a href="#chargers-page" class="category-card">
+        <img src="https://images.unsplash.com/photo-1585338107529-13afc5f02586?auto=format&fit=crop&w=500&q=80" alt="Chargers">
+        <h2>🔌 الشواحن</h2>
+    </a>
 </div>
 
-<div class="card">
-<img src="battery2.jpg">
-<h3>بطارية Dell</h3>
-<p>أداء قوي</p>
-<p><strong>500 TO 2300 ORG EGP</strong></p>
-</div>
-
-</div>
+<!-- ========================================== -->
+<!-- صفحة البطاريات (تظهر عند الضغط) -->
+<!-- ========================================== -->
+<section id="batteries-page" class="page-section">
+    <center><h2 class="section-title">قسم البطاريات</h2></center>
+    <div class="grid">
+        <div class="product-card">
+            <img src="battery1.jpg" alt="HP">
+            <h3>بطارية HP Original</h3>
+            <p>متوافقة مع أغلب موديلات ProBook</p>
+            <span class="price">1200 EGP</span>
+            <a href="https://wa.me/201023431095" class="btn-whatsapp">طلب عبر واتساب</a>
+        </div>
+        <div class="product-card">
+            <img src="battery2.jpg" alt="Dell">
+            <h3>بطارية Dell High Copy</h3>
+            <p>ضمان 6 شهور - أداء ممتاز</p>
+            <span class="price">850 EGP</span>
+            <a href="https://wa.me/201023431095" class="btn-whatsapp">طلب عبر واتساب</a>
+        </div>
+        <!-- يمكنك إضافة المزيد هنا -->
+    </div>
 </section>
 
-<section class="products" id="screens">
-<h2>🖥️ الشاشات</h2>
-<div class="grid">
-
-<div class="card">
-<img src="screen1.jpg">
-<h3>شاشة 15.6</h3>
-<p> led & slim & ips & oled HD & FHD Slim</p>
-<p><strong>600 TO 8500 EGP</strong></p>
-</div>
-
-</div>
+<!-- ========================================== -->
+<!-- صفحة الشاشات -->
+<!-- ========================================== -->
+<section id="screens-page" class="page-section">
+    <center><h2 class="section-title">قسم الشاشات</h2></center>
+    <div class="grid">
+        <div class="product-card">
+            <img src="screen1.jpg" alt="15.6">
+            <h3>شاشة 15.6 FHD Slim</h3>
+            <p>30 Pin - IPS Technology</p>
+            <span class="price">2400 EGP</span>
+            <a href="https://wa.me/201023431095" class="btn-whatsapp">طلب عبر واتساب</a>
+        </div>
+    </div>
 </section>
 
-<section class="products" id="chargers">
-<h2>🔌 الشواحن</h2>
-<div class="grid">
-
-<div class="card">
-<img src="charger1.jpg">
-<h3>شاحن Lenovo</h3>
-<p>65W to 300w Original</p>
-<p><strong>300 to 1700 EGP</strong></p>
-</div>
-
-</div>
+<!-- ========================================== -->
+<!-- صفحة الشواحن -->
+<!-- ========================================== -->
+<section id="chargers-page" class="page-section">
+    <center><h2 class="section-title">قسم الشواحن</h2></center>
+    <div class="grid">
+        <div class="product-card">
+            <img src="charger1.jpg" alt="Lenovo">
+            <h3>شاحن Lenovo 65W</h3>
+            <p>Type-C Original</p>
+            <span class="price">950 EGP</span>
+            <a href="https://wa.me/201023431095" class="btn-whatsapp">طلب عبر واتساب</a>
+        </div>
+    </div>
 </section>
 
 <footer>
-📍 مصر الجديدة - مول كوين - الدور الثاني <br>
-📞 01023431095
+    <p>📍 مصر الجديدة - مول كوين - الدور الثاني</p>
+    <p>📞 تواصل معنا: 01023431095</p>
+    <p>© 2024 XP Laptop Parts - جميع الحقوق محفوظة</p>
 </footer>
 
 </body>

@@ -1,4 +1,29 @@
-<!DOCTYPE html>
+[7:01 PM, 5/11/2026] fadyhany ❤️: <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XP Laptop Parts - المتجر الشامل</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: radial-gradient(circle at top, #1a0000, #000);
+            color: white;
+            scroll-behavior: smooth;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            background: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(15px);
+            position: stic…
+[7:07 PM, 5/11/2026] fadyhany ❤️: <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -22,153 +47,198 @@
             padding: 15px 5%;
             background: rgba(0, 0, 0, 0.9);
             backdrop-filter: blur(15px);
+            position: s…
+[7:14 PM, 5/11/2026] fadyhany ❤️: <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XP Laptop Parts - Extreme Edition</title>
+
+    <style>
+        :root {
+            --primary-red: #ff0000;
+            --neon-orange: #ff6a00;
+            --bg-black: #050505;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg-black);
+            color: white;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        /* ===== تأثير البرق في الخلفية ===== */
+        .lightning-bg {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                        url('https://i.makeagif.com/media/10-21-2015/N_E99m.gif'); /* خلفية برق متحركة */
+            background-size: cover;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(10px);
             position: sticky;
             top: 0;
             z-index: 1000;
-            border-bottom: 2px solid #ff0000;
+            border-bottom: 2px solid var(--primary-red);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
         }
 
-        .logo { font-size: 24px; font-weight: bold; }
-        .logo span { color: #ff2d2d; }
+        /* لوجو XP مع تأثير النبض */
+        .logo { 
+            font-size: 28px; 
+            font-weight: 900; 
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px var(--primary-red);
+            animation: pulse-red 2s infinite;
+        }
+        .logo span { color: var(--primary-red); }
+
+        @keyframes pulse-red {
+            0% { transform: scale(1); text-shadow: 0 0 10px var(--primary-red); }
+            50% { transform: scale(1.05); text-shadow: 0 0 25px var(--primary-red), 0 0 40px var(--neon-orange); }
+            100% { transform: scale(1); text-shadow: 0 0 10px var(--primary-red); }
+        }
 
         nav a {
             color: white;
             margin-right: 15px;
             text-decoration: none;
             transition: 0.3s;
+            font-weight: bold;
             font-size: 14px;
         }
+        nav a:hover { color: var(--primary-red); text-shadow: 0 0 10px var(--primary-red); }
 
-        nav a:hover { color: #ff2d2d; }
-
-        /* ===== HERO SECTION ===== */
+        /* ===== HERO SECTION (الواجهة الجديدة) ===== */
         .hero {
+            position: relative;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            padding: 60px 20px;
-            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1591405351990-4726e331f141?q=80&w=1000');
-            background-size: cover;
-            background-position: center;
+            overflow: hidden;
+            border-bottom: 3px solid var(--primary-red);
+        }
+
+        .hero-content {
+            z-index: 2;
         }
 
         .hero h1 {
-            font-size: 40px;
-            background: linear-gradient(45deg, #ff0000, #ff6a00);
+            font-size: 80px;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #fff 30%, var(--primary-red) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 10px;
+            filter: drop-shadow(0 0 20px rgba(255,0,0,0.5));
+            text-transform: uppercase;
         }
 
-        /* ===== MAIN CATEGORIES ===== */
+        .hero p {
+            font-size: 22px;
+            color: #ddd;
+            margin-top: 10px;
+            letter-spacing: 1px;
+        }
+
+        /* علامة البرق الكبيرة */
+        .bolt-icon {
+            font-size: 50px;
+            color: #ffeb3b;
+            text-shadow: 0 0 30px #ffeb3b;
+            animation: flash 1s infinite alternate;
+        }
+
+        @keyframes flash {
+            from { opacity: 0.3; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1.2); }
+        }
+
+        /* ===== CATEGORIES GRID ===== */
         .categories-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 15px;
-            padding: 40px 5%;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 20px;
+            padding: 50px 8%;
+            background: linear-gradient(to bottom, #000, #1a0000);
         }
 
         .cat-card {
-            background: rgba(255,255,255,0.05);
-            border: 1px solid #ff000033;
-            border-radius: 15px;
-            padding: 20px;
+            background: #111;
+            border: 2px solid #222;
+            border-radius: 20px;
+            padding: 30px 15px;
             text-align: center;
             text-decoration: none;
             color: white;
-            transition: 0.3s;
+            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cat-card::before {
+            content: "";
+            position: absolute;
+            top: -50%; left: -50%; width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(255,0,0,0.2) 0%, transparent 70%);
+            opacity: 0; transition: 0.5s;
         }
 
         .cat-card:hover {
-            transform: translateY(-10px);
-            background: rgba(255,0,0,0.1);
-            border-color: #ff0000;
+            transform: translateY(-15px) scale(1.05);
+            border-color: var(--primary-red);
+            box-shadow: 0 10px 30px rgba(255, 0, 0, 0.3);
         }
 
-        .cat-card i { font-size: 30px; display: block; margin-bottom: 10px; }
+        .cat-card:hover::before { opacity: 1; }
 
-        /* ===== PAGES & SUB-SECTIONS ===== */
-        .page-section {
-            display: none;
-            padding: 60px 5%;
-            min-height: 80vh;
-        }
+        .cat-card i { font-size: 45px; display: block; margin-bottom: 15px; }
+        .cat-card h2 { font-size: 18px; margin: 0; }
 
-        .page-section:target { display: block; }
+        /* الأقسام المخفية */
+        .page-section { display: none; padding: 60px 5%; min-height: 80vh; }
+        .page-section:target { display: block; animation: fadeIn 0.5s ease-in; }
 
-        .brand-section {
-            margin-bottom: 50px;
-            padding: 20px;
-            background: rgba(255,255,255,0.02);
-            border-radius: 20px;
-        }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
-        .brand-title {
-            font-size: 24px;
-            color: #ff2d2d;
-            border-right: 5px solid #ff2d2d;
-            padding-right: 15px;
-            margin-bottom: 25px;
-        }
-
-        /* ===== PRODUCTS GRID ===== */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-            gap: 20px;
-        }
-
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+        
         .product-card {
-            background: #111;
-            border-radius: 12px;
-            padding: 15px;
-            text-align: center;
-            border: 1px solid #333;
-            transition: 0.3s;
+            background: #111; border-radius: 12px; padding: 15px; text-align: center;
+            border: 1px solid #333; transition: 0.3s;
         }
+        .product-card:hover { border-color: var(--primary-red); transform: scale(1.02); }
+        .product-card img { width: 100%; height: 150px; object-fit: contain; background: #fff; border-radius: 8px; }
 
-        .product-card:hover { border-color: #ff0000; }
+        .price { display: block; color: #25d366; font-size: 18px; font-weight: bold; margin: 10px 0; }
+        .btn-buy { display: block; background: #25d366; color: white; text-decoration: none; padding: 10px; border-radius: 8px; }
 
-        .product-card img {
-            width: 100%;
-            height: 150px;
-            object-fit: contain;
-            border-radius: 8px;
-            background: #fff;
-            margin-bottom: 10px;
-        }
-
-        .price {
-            display: block;
-            color: #25d366;
-            font-size: 18px;
-            font-weight: bold;
-            margin: 10px 0;
-        }
-
-        .btn-buy {
-            display: block;
-            background: #25d366;
-            color: white;
-            text-decoration: none;
-            padding: 8px;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 40px;
-            background: #000;
-            border-top: 1px solid #ff0000;
-            margin-top: 50px;
-        }
+        footer { text-align: center; padding: 40px; background: #000; border-top: 2px solid var(--primary-red); }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="logo">XP <span>LAPTOP PARTS</span></div>
+    <div class="logo">XP <span>EXTREME</span></div>
     <nav>
-        <a href="#">الرئيسية</a>
+        <a href="#">🏠 الرئيسية</a>
         <a href="#batteries">البطاريات</a>
         <a href="#screens">الشاشات</a>
         <a href="#chargers">الشواحن</a>
@@ -179,9 +249,17 @@
 </header>
 
 <div id="home">
+    <!-- الواجهة الاحترافية الجديدة -->
     <section class="hero">
-        <h1>XP LAPTOP PARTS</h1>
-        <p>قطع غيار لابتوب أصلية بأفضل الأسعار في مصر</p>
+        <div class="lightning-bg"></div>
+        <div class="hero-content">
+            <div class="bolt-icon">⚡</div>
+            <h1>XP LAPTOP PARTS</h1>
+            <p>القوة والدقة في قطع غيار اللابتوب</p>
+            <div style="margin-top: 20px; font-weight: bold; color: var(--primary-red);">
+                أقوى مخزن في مصر - صيانة | قطع غيار | إكسسوارات
+            </div>
+        </div>
     </section>
 
     <div class="categories-container">
@@ -190,176 +268,32 @@
         <a href="#chargers" class="cat-card"><i>🔌</i><h2>الشواحن</h2></a>
         <a href="#keyboards" class="cat-card"><i>⌨️</i><h2>كيبوردات</h2></a>
         <a href="#fans" class="cat-card"><i>🌀</i><h2>الفانات</h2></a>
-        <a href="#accessories" class="cat-card"><i>🛠️</i><h2>إكسسوارات</h2></a>
+        <a href="#accessories" class="cat-card"><i>🛠️</i><h2>العدد والإكسسوار</h2></a>
     </div>
 </div>
 
 <!-- ========================================== -->
-<!-- صفحة البطاريات (كاملة) -->
+<!-- نفس أقسام المنتجات (البطاريات، الشاشات، إلخ) توضع هنا -->
 <!-- ========================================== -->
 <section id="batteries" class="page-section">
-    <center><h1 style="color: #ff2d2d; margin-bottom: 40px;">مخزن البطاريات</h1></center>
-
-    <div class="brand-section">
-        <h2 class="brand-title">LENOVO</h2>
-        <div class="grid">
-            <div class="product-card">
-                <img src="https://m.media-amazon.com/images/I/61hHyKaRMfL._AC_UF350,350_QL80_.jpg">
-                <h3>IdeaPad 320</h3>
-                <span class="price">800 EGP</span>
-                <a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a>
-            </div>
-            <div class="product-card">
-                <img src="https://www.uaebattery.ae/lenovo-ar/pic_big_Zoom/G400S-2.jpg">
-                <h3>Lenovo G50-70</h3>
-                <span class="price">700 EGP</span>
-                <a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="brand-section">
-        <h2 class="brand-title">DELL</h2>
-        <div class="grid">
-            <div class="product-card">
-                <img src="https://www.laptopbattery.com.sg/dell/pic_big_Zoom/WDX0R-PN-1.jpg">
-                <h3>Dell Inspiron 5570</h3>
-                <span class="price">1250 EGP</span>
-                <a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a>
-            </div>
-            <div class="product-card">
-                <img src="https://batolstore.com/wp-content/uploads/2025/10/battery-5558.jpg">
-                <h3>DELL 5558</h3>
-                <span class="price">600 EGP</span>
-                <a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="brand-section">
-        <h2 class="brand-title">HP</h2>
-        <div class="grid">
-            <div class="product-card">
-                <img src="https://m.media-amazon.com/images/I/71DKuBqaLBL.jpg">
-                <h3>HP X360 HT03XL</h3>
-                <span class="price">650 EGP</span>
-                <a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ========================================== -->
-<!-- صفحة الشاشات (كاملة) -->
-<!-- ========================================== -->
-<section id="screens" class="page-section">
-    <center><h1 style="color: #ff2d2d; margin-bottom: 40px;">قسم الشاشات</h1></center>
-    <div class="grid">
-        <div class="product-card"><img src="https://m.media-amazon.com/images/I/61XDeSAnA2L._AC_SL1200_.jpg"><h3>15.6 Slim 30 Pin</h3><span class="price">950 EGP</span><a href="..." class="btn-buy">طلب</a></div>
-        <div class="product-card"><img src="https://cdn11.bigcommerce.com/s-vy9cg/images/stencil/608x608/products/648391/74674300/11030__90011.1758412602.jpg"><h3>15.6 LED 40 PIN</h3><span class="price">600 EGP</span><a href="..." class="btn-buy">طلب</a></div>
-        <div class="product-card"><img src="https://www.thebrandstore.pk/media/catalog/product/cache/c6a99b8cca15068ddf9e47e30b9d54a9/l/e/led_15.6_40_pin_slim_nt156whm-n10_by_thebrandstore.pk_1.jpg"><h3>15.6 SLIM 40 PIN</h3><span class="price">900 EGP</span><a href="..." class="btn-buy">طلب</a></div>
-        <div class="product-card"><img src="https://c1.neweggimages.com/NeweggImage/productimage/BH5UD2402040KWQ4Y7D.jpg"><h3>15.6 IPS 30 PIN FHD</h3><span class="price">1600 EGP</span><a href="..." class="btn-buy">طلب</a></div>
-        <div class="product-card"><img src="https://m.media-amazon.com/images/I/61ozzCQ-AaL._AC_UF894,1000_QL80_.jpg"><h3>15.6 IPS 40 PIN 144HZ</h3><span class="price">2700 EGP</span><a href="..." class="btn-buy">طلب</a></div>
-        <div class="product-card"><img src="https://www.laptopscreen.com/img/screens/1000/B140XTN02.E.jpg"><h3>14.0 SLIM 30 PIN HD</h3><span class="price">925 EGP</span><a href="..." class="btn-buy">طلب</a></div>
-        <div class="product-card"><img src="https://deprimesolutions.co.ke/wp-content/uploads/2021/03/new-laptop-screen-in-Nairobi-600x600.jpg"><h3>14.0 SLIM 40 PIN HD</h3><span class="price">950 EGP</span><a href="..." class="btn-buy">طلب</a></div>
-        <div class="product-card"><img src="https://rondamo.co.ke/photok/534132.jpg"><h3>14.0 SLIM IPS 30 PIN HD</h3><span class="price">1450 EGP</span><a href="..." class="btn-buy">طلب</a></div>
-        <div class="product-card"><img src="https://lansotechsolutions.co.ke/wp-content/uploads/2023/10/61zqWK1NyL.jpg"><h3>14.0 SLIM IPS 30 PIN FHD</h3><span class="price">1600 EGP</span><a href="..." class="btn-buy">طلب</a></div>
-        <div class="product-card"><img src="https://www.pro-lcds.com/554885-large_default/lcd-screen-for-hp-compaq-pavilion-g4-1000-s%C3%A9rie-140-1366x768.jpg"><h3>14.0 LED 40 PIN HD</h3><span class="price">750 EGP</span><a href="..." class="btn-buy">طلب</a></div>
-        <div class="product-card"><img src="https://i.ebayimg.com/images/g/KXMAAOSwgodnOBm3/s-l400.jpg"><h3>16.0 IPS 30 PIN 60HZ</h3><span class="price">4900 EGP</span><a href="..." class="btn-buy">طلب</a></div>
-        <div class="product-card"><img src="https://m.media-amazon.com/images/I/610ItLk4DJL._AC_UF894,1000_QL80_.jpg"><h3>16.0 IPS 40 PIN 165HZ</h3><span class="price">5100 EGP</span><a href="..." class="btn-buy">طلب</a></div>
-        <div class="product-card"><img src="https://i.ebayimg.com/images/g/N9oAAeSwXEVo7R3C/s-l1200.jpg"><h3>15.3 IPS 30 PIN</h3><span class="price">9500 EGP</span><a href="..." class="btn-buy">طلب</a></div>
-        <div class="product-card"><img src="https://i.ebayimg.com/images/g/Ej8AAOSwbdJmsN3I/s-l400.jpg"><h3>15.6 IPS PRE 5530</h3><span class="price">6500 EGP</span><a href="..." class="btn-buy">طلب</a></div>
-        <div class="product-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUb2k83S4H5waSCXmqKI5ADTH7dZod26p37A&s"><h3>16.1 IPS 30 FHD</h3><span class="price">5000 EGP</span><a href="..." class="btn-buy">طلب</a></div>
-    </div>
-</section>
-
-<!-- ========================================== -->
-<!-- صفحة الشواحن -->
-<!-- ========================================== -->
-<section id="chargers" class="page-section">
-    <center><h1 style="color: #ff2d2d; margin-bottom: 40px;">قسم الشواحن الأصلية</h1></center>
+    <center><h1 style="color: var(--primary-red);">مخزن البطاريات</h1></center>
     <div class="grid">
         <div class="product-card">
-            <img src="https://m.media-amazon.com/images/I/61X-pM2u+3L._AC_SL1500_.jpg">
-            <h3>شاحن HP 65W Blue Pin</h3>
-            <span class="price">450 EGP</span>
+            <img src="https://m.media-amazon.com/images/I/61hHyKaRMfL._AC_UF350,350_QL80_.jpg">
+            <h3>IdeaPad 320</h3>
+            <span class="price">800 EGP</span>
             <a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a>
         </div>
-        <div class="product-card">
-            <img src="https://m.media-amazon.com/images/I/517f8Uj5xSL._AC_SL1000_.jpg">
-            <h3>شاحن Dell 65W</h3>
-            <span class="price">450 EGP</span>
-            <a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a>
-        </div>
+        <!-- ضيف باقي المنتجات هنا -->
     </div>
 </section>
 
-<!-- ========================================== -->
-<!-- صفحة الكيبوردات (جديد) -->
-<!-- ========================================== -->
-<section id="keyboards" class="page-section">
-    <center><h1 style="color: #ff2d2d; margin-bottom: 40px;">قسم الكيبوردات</h1></center>
-    <div class="grid">
-        <div class="product-card">
-            <img src="https://m.media-amazon.com/images/I/51I36L+Z-DL._AC_SL1000_.jpg">
-            <h3>Keyboard Dell 3542</h3>
-            <span class="price">250 EGP</span>
-            <a href="..." class="btn-buy">طلب واتساب</a>
-        </div>
-        <div class="product-card">
-            <img src="https://m.media-amazon.com/images/I/61pUul1oDlL._AC_SL1500_.jpg">
-            <h3>كيبورد مضيء Gaming</h3>
-            <span class="price">350 EGP</span>
-            <a href="..." class="btn-buy">طلب واتساب</a>
-        </div>
-    </div>
-</section>
-
-<!-- ========================================== -->
-<!-- صفحة الفانات (جديد) -->
-<!-- ========================================== -->
-<section id="fans" class="page-section">
-    <center><h1 style="color: #ff2d2d; margin-bottom: 40px;">قسم الفانات</h1></center>
-    <div class="grid">
-        <div class="product-card">
-            <img src="https://m.media-amazon.com/images/I/61E5U6S8+xL._AC_SL1000_.jpg">
-            <h3>Fan Dell Inspiron 15</h3>
-            <span class="price">300 EGP</span>
-            <a href="..." class="btn-buy">طلب واتساب</a>
-        </div>
-    </div>
-</section>
-
-<!-- ========================================== -->
-<!-- صفحة الإكسسوارات (جديد) -->
-<!-- ========================================== -->
-<section id="accessories" class="page-section">
-    <center><h1 style="color: #ff2d2d; margin-bottom: 40px;">قسم الإكسسوارات والعدد</h1></center>
-    <div class="grid">
-        <div class="product-card">
-            <img src="https://m.media-amazon.com/images/I/618SshT6nXL._AC_SL1500_.jpg">
-            <h3>مفك كهرباء شحن</h3>
-            <span class="price">1200 EGP</span>
-            <a href="..." class="btn-buy">طلب واتساب</a>
-        </div>
-        <div class="product-card">
-            <img src="https://m.media-amazon.com/images/I/61CGHv6UadL._AC_SL1500_.jpg">
-            <h3>سماعة Gaming P47</h3>
-            <span class="price">550 EGP</span>
-            <a href="..." class="btn-buy">طلب واتساب</a>
-        </div>
-    </div>
-</section>
+<!-- كرر باقي الأقسام (شاشات، شواحن، فانات..) بنفس الطريقة السابقة -->
 
 <footer>
     <p>📍 مصر الجديدة - مول كوين - الدور الثاني</p>
-    <p>📞 01023431095</p>
-    <p>© 2024 XP Laptop Parts</p>
-</footer>
-
-</body>
-</html>
-    <p>© 2024 XP Laptop Parts</p>
+    <p style="color: var(--primary-red); font-weight: bold;">⚡ XP - قوة الأداء ⚡</p>
+    <p>© 2024 XP Extreme Parts</p>
 </footer>
 
 </body>

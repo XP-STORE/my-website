@@ -1,216 +1,94 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>XP Laptop Parts</title>
 
-<style>
-body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#0b0b0b;
-    color:white;
-}
-
-header{
-    background:#111;
-    padding:20px 40px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    border-bottom:2px solid #c40000;
-}
-
-.logo{
-    color:#fff;
-    font-size:28px;
-    font-weight:bold;
-}
-
-.logo span{
-    color:#ff0000;
-}
-
-nav a{
-    color:white;
-    margin:0 10px;
-    text-decoration:none;
-    font-size:14px;
-}
-
-.hero{
-    padding:80px 40px;
-    background:linear-gradient(to right,#000,#220000);
-}
-
-.hero h1{
-    font-size:48px;
-    color:#ff1a1a;
-    margin:0;
-}
-
-.hero p{
-    font-size:20px;
-}
-
-.btn{
-    display:inline-block;
-    background:#ff0000;
-    color:white;
-    padding:12px 25px;
-    text-decoration:none;
-    border-radius:6px;
-    margin-top:20px;
-}
-
-.products{
-    padding:40px;
-}
-
-.products h2{
-    color:#ff2d2d;
-    margin-bottom:20px;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:#151515;
-    border:1px solid #aa0000;
-    padding:15px;
-    border-radius:10px;
-    text-align:center;
-}
-
-.card img{
-    width:100%;
-    border-radius:8px;
-}
-
-.card h3{
-    color:#ff2d2d;
-    margin:10px 0 5px;
-}
-
-.card p{
-    margin:5px 0;
-}
-
-footer{
-    background:#111;
-    padding:20px;
-    text-align:center;
-    border-top:2px solid #c40000;
-    font-size:14px;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
 <header>
-<div class="logo">XP <span>LAPTOP PARTS</span></div>
+
+<div class="logo">
+XP <span>LAPTOP PARTS</span>
+</div>
 
 <nav>
-<a href="#batteries">بطاريات</a>
-<a href="#screens">شاشات</a>
-<a href="#chargers">شواحن</a>
+<a href="index.html">الرئيسية</a>
+<a href="batteries.html">البطاريات</a>
+<a href="screens.html">الشاشات</a>
+<a href="chargers.html">الشواحن</a>
+<a href="keyboards.html">الكيبوردات</a>
 </nav>
+
 </header>
 
 <section class="hero">
+
 <h1>XP Laptop Parts</h1>
-<p>متخصصون في بيع قطع غيار اللاب توب الأصلية</p>
-<a class="btn" href="https://wa.me/201023431095">تواصل واتساب</a>
+
+<p>
+متخصصون في بيع قطع غيار اللاب توب الأصلية
+</p>
+
+<a class="btn"
+href="https://wa.me/201023431095">
+تواصل واتساب
+</a>
+
+<a class="btn call"
+href="tel:0222560352">
+اتصال مباشر
+</a>
+
 </section>
 
-<!-- البطاريات -->
-<section class="products" id="batteries">
-<h2>🔋 البطاريات</h2>
-
-<div class="grid">
-
-<div class="card">
-<img src="battery1.jpg">
-<h3>بطارية HP</h3>
-<p>أ - جودة عالية</p>
-<p><strong>500 EGP</strong></p>
-</div>
-
-<div class="card">
-<img src="battery2.jpg">
-<h3>بطارية Dell</h3>
-<p>أداء ممتاز</p>
-<p><strong>700 EGP</strong></p>
-</div>
-
-</div>
-</section>
-
-<!-- الشاشات -->
-<section class="products" id="screens">
-<h2>🖥️ الشاشات</h2>
-
-<div class="grid">
-
-<div class="card">
-<img src="screen1.jpg">
-<h3>شاشة 15.6 Slim</h3>
-<p> HD</p>
-<p><strong>950 EGP</strong></p>
-</div>
-
-</div>
-</section>
-
-<!-- الشواحن -->
-<section class="products" id="chargers">
-<h2>🔌 الشواحن</h2>
-
-<div class="grid">
-
-<div class="card">
-<img src="charger1.jpg">
-<h3>شاحن Lenovo</h3>
-<p>65W Original</p>
-<p><strong>300 EGP</strong></p>
-</div>
-
-</div>
-</section>
-
-<!-- أخرى -->
 <section class="products">
-<h2>🧰 قطع غيار أخرى</h2>
+
+<h2>الأقسام الرئيسية</h2>
 
 <div class="grid">
 
-<div class="card">
-<h3>كيبوردات</h3>
-<p>جميع الأنواع</p>
-<p><strong>أسعار مختلفة</strong></p>
-</div>
+<a href="batteries.html" class="card">
 
-<div class="card">
-<h3>مراوح</h3>
-<p>تبريد قوي</p>
-<p><strong>حسب الموديل</strong></p>
-</div>
+<img src="images/battery1.jpg">
 
-</div>
-</section>
+<h3>البطاريات</h3>
 
-<footer>
-<p>📍 مصر الجديدة - مول كوين - الدور الثاني</p>
-<p>📞 01023431095 & 0222560352</p>
-<p>© XP Laptop Parts 2026</p>
-</footer>
+<p>
+أكثر من 100 بطارية
+</p>
 
-</body>
-</html>
+</a>
+
+<a href="screens.html" class="card">
+
+<img src="images/screen1.jpg">
+
+<h3>الشاشات</h3>
+
+<p>
+جميع أنواع الشاشات
+</p>
+
+</a>
+
+<a href="chargers.html" class="card">
+
+<img src="images/charger1.jpg">
+
+<h3>الشواحن</h3>
+
+<p>
+شواحن أصلية
+</p>
+
+</a>
+
+<a href="keyboards.html" class="card">

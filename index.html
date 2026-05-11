@@ -6,7 +6,6 @@
     <title>XP Laptop Parts - Extreme Edition</title>
 
     <style>
-        /* التعديلات الجمالية فقط مع الحفاظ على الهيكل */
         :root {
             --main-red: #ff0000;
             --dark-bg: #050505;
@@ -22,7 +21,6 @@
             overflow-x: hidden;
         }
 
-        /* ===== HEADER ===== */
         header {
             display: flex;
             justify-content: space-between;
@@ -58,7 +56,6 @@
         }
         nav a:hover { color: var(--main-red); }
 
-        /* ===== HERO ===== */
         .hero {
             text-align: center;
             padding: 100px 20px;
@@ -88,7 +85,6 @@
             50% { opacity: 0.5; transform: scale(1.2) rotate(10deg); color: #ffeb3b; }
         }
 
-        /* ===== CATEGORIES ===== */
         .categories-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -132,7 +128,7 @@
         .btn-buy { display: block; background: #25d366; color: white; text-decoration: none; padding: 10px; border-radius: 5px; font-size: 14px; font-weight: bold; }
         .btn-buy:hover { background: #1ebe57; box-shadow: 0 0 10px #25d366; }
 
-        /* الأجزاء الجديدة للواتساب واللوكيشن */
+        /* زرار واتساب العائم */
         .whatsapp-float {
             position: fixed;
             bottom: 20px;
@@ -147,25 +143,31 @@
             justify-content: center;
             z-index: 2000;
             box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            transition: 0.3s;
         }
+        .whatsapp-float:hover { transform: scale(1.1); background: #1ebe57; }
+
+        /* زرار اللوكيشن الأزرق */
         .btn-location {
             display: inline-block;
             background: #4285F4;
             color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 12px 25px;
+            border-radius: 30px;
             text-decoration: none;
-            margin-top: 10px;
+            margin: 15px 0;
             font-weight: bold;
+            transition: 0.3s;
         }
+        .btn-location:hover { background: #357ae8; transform: translateY(-3px); }
 
         footer { text-align: center; padding: 40px; background: #000; border-top: 2px solid var(--main-red); margin-top: 50px; }
     </style>
 </head>
 <body>
 
-<a href="https://wa.me/201023431095" class="whatsapp-float" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="35">
+<a href="https://api.whatsapp.com/send?phone=201023431095" class="whatsapp-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="35" alt="WhatsApp">
 </a>
 
 <header>
@@ -245,49 +247,62 @@
 <section id="fans" class="page-section">
     <center><h1 style="color: #ff2d2d; margin-bottom: 40px;">قسم الفانات</h1></center>
     <div class="grid">
-        <div class="product-card"><img src="https://rukminim2.flixcart.com/image/480/640/kosxzm80/laptop-heat-sink/o/f/q/new-for-dell-inspiron-15-3521-5535-laptop-cpu-cooling-fan-w5j7-original-imafen2h9kzh3n4f.jpeg?q=20"><h3>Fan Dell Inspiron 15 3521 = HP 15-G </h3><span class="price">200 EGP</span><a href="https://wa.me/201023431095?text=طلب فانة Dell 3521" class="btn-buy">طلب واتساب</a></div>
-        <div class="product-card"><img src="https://m.media-amazon.com/images/I/41HUGDU8nTL.jpg?q=20"><h3>Fan hp 15-AC=250-G4=15-BS=250-G6 </h3><span class="price">250 EGP</span><a href="https://wa.me/201023431095?text=طلب فانة HP 15-AC" class="btn-buy">طلب واتساب</a></div>
-        <div class="product-card"><img src="https://www.trust-eg.com/image/cache/catalog/Fan/HP1/Genuine-HP-15-DA-15-DR-15-DS-15-DX-250-G7-fan-dc28000l6d0-228x228.jpg?q=20"><h3>Fan hp 15-DA=250-G7 </h3><span class="price">300 EGP</span><a href="https://wa.me/201023431095?text=طلب فانة HP 15-DA" class="btn-buy">طلب واتساب</a></div>
-        <div class="product-card"><img src="https://m.media-amazon.com/images/I/511+A2EyU5S._AC_UF1000,1000_QL80_.jpg?q=20"><h3>Fan hp 15-DW = 250 G8  </h3><span class="price">450 EGP</span><a href="https://wa.me/201023431095?text=طلب فانة HP 15-DW" class="btn-buy">طلب واتساب</a></div>
-        <div class="product-card"><img src="https://m.media-amazon.com/images/I/71dkQOd-PzL._AC_UF1000,1000_QL80_.jpg?q=20"><h3>Fan hp 15-P= 15-K  </h3><span class="price">350 EGP</span><a href="https://wa.me/201023431095?text=طلب فانة HP 15-P" class="btn-buy">طلب واتساب</a></div>
-        <div class="product-card"><img src="https://m.media-amazon.com/images/I/71bHLD7BCWL._AC_UF1000,1000_QL80_.jpg?q=20"><h3>Fan hp 15-N </h3><span class="price">350 EGP</span><a href="https://wa.me/201023431095?text=طلب فانة HP 15-N" class="btn-buy">طلب واتساب</a></div>
-        <div class="product-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuCGwXBguQkefZYH-EfoP-qzaV3CcTSLQ51Q&s?q=20"><h3>Fan hp G6-1000 </h3><span class="price">200 EGP</span><a href="https://wa.me/201023431095?text=طلب فانة HP G6-1000" class="btn-buy">طلب واتساب</a></div>
-        <div class="product-card"><img src="https://m.media-amazon.com/images/I/41AwfKkZtBL._AC_UF1000,1000_QL80_.jpg?q=20"><h3>Fan hp G6-2000 </h3><span class="price">200 EGP</span><a href="https://wa.me/201023431095?text=طلب فانة HP G6-2000" class="btn-buy">طلب واتساب</a></div>
-        <div class="product-card"><img src="https://m.media-amazon.com/images/I/219LVvQZBYL._AC_UF894,1000_QL80_.jpg?q=20"><h3>Fan hp 4540S </h3><span class="price">200 EGP</span><a href="https://wa.me/201023431095?text=طلب فانة HP 4540S" class="btn-buy">طلب واتساب</a></div>
-        <div class="product-card"><img src="https://m.media-amazon.com/images/I/71lSKClIqGL._AC_UF894,1000_QL80_.jpg?q=20"><h3>Fan hp 4530S=8460 </h3><span class="price">200 EGP</span><a href="https://wa.me/201023431095?text=طلب فانة HP 4530S" class="btn-buy">طلب واتساب</a></div>
-        <div class="product-card"><img src="https://m.media-amazon.com/images/I/41drRjIz6LL._AC_UF1000,1000_QL80_.jpg?q=20"><h3>Fan hp 850-G7 </h3><span class="price">750 EGP</span><a href="https://wa.me/201023431095?text=طلب فانة HP 850-G7" class="btn-buy">طلب واتساب</a></div>
-        <div class="product-card"><img src="https://m.media-amazon.com/images/I/61c7JI-xUFL._AC_UF894,1000_QL80_.jpg?q=20"><h3>Fan HP VICTUS 16-D 80W R+L </h3><span class="price">1550 EGP</span><a href="https://wa.me/201023431095?text=طلب فانات VICTUS 80W" class="btn-buy">طلب واتساب</a></div>
-        <div class="product-card"><img src="https://m.media-amazon.com/images/I/61nl5TQvuCL._AC_UF894,1000_QL80_.jpg?q=20"><h3>Fan hp G62 </h3><span class="price">250 EGP</span><a href="https://wa.me/201023431095?text=طلب فانة HP G62" class="btn-buy">طلب واتساب</a></div>
-        <div class="product-card"><img src="https://m.media-amazon.com/images/I/61c7JI-xUFL._AC_UF894,1000_QL80_.jpg?q=20"><h3>Fan hp VICTUS 16-D 60W R+L </h3><span class="price">1450 EGP</span><a href="https://wa.me/201023431095?text=طلب فانات VICTUS 60W" class="btn-buy">طلب واتساب</a></div>
-        <div class="product-card"><img src="https://m.media-amazon.com/images/I/51iVyGkeJ-L.jpg?q=20"><h3>Fan hp 450-G8 =450-G9 ORG </h3><span class="price">650 EGP</span><a href="https://wa.me/201023431095?text=طلب فانة HP 450-G8" class="btn-buy">طلب واتساب</a></div>
-        <div class="product-card"><img src="https://m.media-amazon.com/images/I/615+YuFHKLL.jpg?q=20"><h3>Fan hp 15-CS =15-CW ORG  </h3><span class="price">550 EGP</span><a href="https://wa.me/201023431095?text=طلب فانة HP 15-CS" class="btn-buy">طلب واتساب</a></div>
-        <div class="product-card"><img src="https://www.trust-eg.com/image/cache/catalog/Fan/HP1/Genuine-HP-Omen-15-ce-17-an-CPU-processor-Fan-ns75b00-16m02-929455-001-22-1280x720.jpg?q=20"><h3>Fan hp 15-CE R+L ORG  </h3><span class="price">900 EGP</span><a href="https://wa.me/201023431095?text=طلب فانات HP 15-CE" class="btn-buy">طلب واتساب</a></div>
-        <div class="product-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWfVfLnBFeRhRrUow6O-pgXojwXD6LLKG2ng&s?q=20"><h3>Fan hp 840-G1 = 745-G1 =840-G2 </h3><span class="price">300 EGP</span><a href="https://wa.me/201023431095?text=طلب فانة HP 840-G1" class="btn-buy">طلب واتساب</a></div>
-        <div class="product-card"><img src="https://m.media-amazon.com/images/I/81Rmzg3n0oL._AC_UF1000,1000_QL80_.jpg?q=20"><h3>Fan hp 450-G4  </h3><span class="price">450 EGP</span><a href="https://wa.me/201023431095?text=طلب فانة HP 450-G4" class="btn-buy">طلب واتساب</a></div>
-        <div class="product-card"><img src="https://m.media-amazon.com/images/I/41HUGDU8nTL.jpg?q=20"><h3>Fan hp 15-DH R+L ORG  </h3><span class="price">1300 EGP</span><a href="https://wa.me/201023431095?text=طلب فانات HP 15-DH" class="btn-buy">طلب واتساب</a></div>
-        <div class="product-card"><img src="https://m.media-amazon.com/images/I/71JdCZ3PtNL._AC_UF1000,1000_QL80_.jpg?q=20"><h3>Fan hp 840-G5 </h3><span class="price">550 EGP</span><a href="https://wa.me/201023431095?text=طلب فانة HP 840-G5" class="btn-buy">طلب واتساب</a></div>
-        <div class="product-card"><img src="https://m.media-amazon.com/images/I/51puElMkQCL._AC_UF1000,1000_QL80_.jpg?q=20"><h3>Fan hp 14-CM = 14-CF </h3><span class="price">400 EGP</span><a href="https://wa.me/201023431095?text=طلب فانة HP 14-CM" class="btn-buy">طلب واتساب</a></div>
-        <div class="product-card"><img src="https://m.media-amazon.com/images/I/91IMACTSRlL.jpg?q=20"><h3>Fan hp 640-G4 OR </h3><span class="price">550 EGP</span><a href="https://wa.me/201023431095?text=طلب فانة HP 640-G4" class="btn-buy">طلب واتساب</a></div>
-        <div class="product-card"><img src="https://m.media-amazon.com/images/I/41IY8sPfuIL._AC_UF1000,1000_QL80_.jpg?q=20"><h3>Fan hp 15-CC </h3><span class="price">750 EGP</span><a href="https://wa.me/201023431095?text=طلب فانة HP 15-CC" class="btn-buy">طلب واتساب</a></div>
-        <div class="product-card"><img src="https://m.media-amazon.com/images/I/510O-i3obRL._AC_UF894,1000_QL80_.jpg?q=20"><h3>Fan hp 15M-AU = 15T-EC R+L </h3><span class="price">900 EGP</span><a href="https://wa.me/201023431095?text=طلب فانات HP 15M-AU" class="btn-buy">طلب واتساب</a></div>
-        <div class="product-card"><img src="https://m.media-amazon.com/images/I/41uCvrZYJGL.jpg?q=20"><h3>Fan DELL INS 5570 = 3590  </h3><span class="price">250 EGP</span><a href="https://wa.me/201023431095?text=طلب فانة DELL 5570" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://rukminim2.flixcart.com/image/480/640/kosxzm80/laptop-heat-sink/o/f/q/new-for-dell-inspiron-15-3521-5535-laptop-cpu-cooling-fan-w5j7-original-imafen2h9kzh3n4f.jpeg?q=20"><h3>Fan Dell 3521</h3><span class="price">200 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://m.media-amazon.com/images/I/41HUGDU8nTL.jpg"><h3>Fan hp 15-AC</h3><span class="price">250 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://www.trust-eg.com/image/cache/catalog/Fan/HP1/Genuine-HP-15-DA-15-DR-15-DS-15-DX-250-G7-fan-dc28000l6d0-228x228.jpg"><h3>Fan hp 15-DA=250-G7 </h3><span class="price">300 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://m.media-amazon.com/images/I/511+A2EyU5S._AC_UF1000,1000_QL80_.jpg"><h3>Fan hp 15-DW = 250 G8  </h3><span class="price">450 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://m.media-amazon.com/images/I/71dkQOd-PzL._AC_UF1000,1000_QL80_.jpg"><h3>Fan hp 15-P= 15-K  </h3><span class="price">350 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://m.media-amazon.com/images/I/71bHLD7BCWL._AC_UF1000,1000_QL80_.jpg"><h3>Fan hp 15-N </h3><span class="price">350 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuCGwXBguQkefZYH-EfoP-qzaV3CcTSLQ51Q&s"><h3>Fan hp G6-1000 </h3><span class="price">200 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://m.media-amazon.com/images/I/41AwfKkZtBL._AC_UF1000,1000_QL80_.jpg"><h3>Fan hp G6-2000 </h3><span class="price">200 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://m.media-amazon.com/images/I/219LVvQZBYL._AC_UF894,1000_QL80_.jpg"><h3>Fan hp 4540S </h3><span class="price">200 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://m.media-amazon.com/images/I/71lSKClIqGL._AC_UF894,1000_QL80_.jpg"><h3>Fan hp 4530S=8460 </h3><span class="price">200 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://m.media-amazon.com/images/I/41drRjIz6LL._AC_UF1000,1000_QL80_.jpg"><h3>Fan hp 850-G7 </h3><span class="price">750 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://m.media-amazon.com/images/I/61c7JI-xUFL._AC_UF894,1000_QL80_.jpg"><h3>Fan HP VICTUS 16-D 80W </h3><span class="price">1550 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://m.media-amazon.com/images/I/61nl5TQvuCL._AC_UF894,1000_QL80_.jpg"><h3>Fan hp G62 </h3><span class="price">250 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://m.media-amazon.com/images/I/61c7JI-xUFL._AC_UF894,1000_QL80_.jpg"><h3>Fan hp VICTUS 16-D 60W </h3><span class="price">1450 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://m.media-amazon.com/images/I/51iVyGkeJ-L.jpg"><h3>Fan hp 450-G8 ORG </h3><span class="price">650 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://m.media-amazon.com/images/I/615+YuFHKLL.jpg"><h3>Fan hp 15-CS ORG </h3><span class="price">550 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://www.trust-eg.com/image/cache/catalog/Fan/HP1/Genuine-HP-Omen-15-ce-17-an-CPU-processor-Fan-ns75b00-16m02-929455-001-22-1280x720.jpg"><h3>Fan hp 15-CE ORG </h3><span class="price">900 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWfVfLnBFeRhRrUow6O-pgXojwXD6LLKG2ng&s"><h3>Fan hp 840-G1 </h3><span class="price">300 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://m.media-amazon.com/images/I/81Rmzg3n0oL._AC_UF1000,1000_QL80_.jpg"><h3>Fan hp 450-G4 </h3><span class="price">450 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://m.media-amazon.com/images/I/41HUGDU8nTL.jpg"><h3>Fan hp 15-DH ORG </h3><span class="price">1300 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://m.media-amazon.com/images/I/71JdCZ3PtNL._AC_UF1000,1000_QL80_.jpg"><h3>Fan hp 840-G5</h3><span class="price">550 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://m.media-amazon.com/images/I/51puElMkQCL._AC_UF1000,1000_QL80_.jpg"><h3>Fan hp 14-CM</h3><span class="price">400 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://m.media-amazon.com/images/I/91IMACTSRlL.jpg"><h3>Fan hp 640-G4 ORG</h3><span class="price">550 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://m.media-amazon.com/images/I/41IY8sPfuIL._AC_UF1000,1000_QL80_.jpg"><h3>Fan hp 15-CC</h3><span class="price">750 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://m.media-amazon.com/images/I/510O-i3obRL._AC_UF894,1000_QL80_.jpg"><h3>Fan hp 15M-AU</h3><span class="price">900 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://m.media-amazon.com/images/I/41uCvrZYJGL.jpg"><h3>Fan DELL 5570</h3><span class="price">250 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
     </div>
 </section>
 
 <section id="accessories" class="page-section">
     <center><h1 style="color: #ff2d2d; margin-bottom: 40px;">إكسسوارات وعدد</h1></center>
     <div class="grid">
-        <div class="product-card"><img src="https://cdn11.bigcommerce.com/s-am5zt8xfow/images/stencil/original/products/3700/11965/803461517_max__09991.1718293639.jpg"><h3>مفك كهرباء شحن تايب سي </h3><span class="price">1000 EGP</span><a href="https://wa.me/201023431095?text=طلب مفك كهرباء شحن" class="btn-buy">طلب واتساب</a></div>
-        <div class="product-card"><img src="https://adecil.fbitsstatic.net/img/p/fita-dupla-face-espuma-scotch-mount-4026-19-mm-x-20-m-73372/257992.jpg?w=420&h=420&v=no-change&qs=ignore"><h3>دبل فيس للابتوب </h3><span class="price">100 EGP</span><a href="https://wa.me/201023431095?text=طلب دبل فيس لابتوب" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://cdn11.bigcommerce.com/s-am5zt8xfow/images/stencil/original/products/3700/11965/803461517_max__09991.1718293639.jpg"><h3>مفك كهرباء شحن </h3><span class="price">1000 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
+        <div class="product-card"><img src="https://adecil.fbitsstatic.net/img/p/fita-dupla-face-espuma-scotch-mount-4026-19-mm-x-20-m-73372/257992.jpg"><h3>دبل فيس للابتوب </h3><span class="price">100 EGP</span><a href="https://wa.me/201023431095" class="btn-buy">طلب واتساب</a></div>
     </div>
 </section>
 
 <footer>
-    <p>📍 مصر الجديدة - مول كوين - الدور الثاني</p>
-    <a href="https://maps.app.goo.gl/uXv4N1V4mH7KAnS39" target="_blank" class="btn-location">📍 موقعنا على الخريطة</a>
-    <p style="margin-top: 15px;">📞 01023431095</p>
-    <p style="color: red; font-weight: bold;">⚡ XP LAPTOP PARTS ⚡</p>
-    <p>© 2001 XP Store</p>
+    <div style="padding: 10px;">
+        <h3 style="color: var(--main-red);">فرع شركة XP</h3>
+        <p>📍 مصر الجديدة - مول كوين - الدور الثاني</p>
+        
+        <a href="Https://maps.google.com?q=XP%20Power%20For%20Computer,%20%D9%85%D9%88%D9%84%20%D9%83%D9%88%D9%8A%D9%86%20%D8%B3%D9%86%D8%AA%D8%B1,%2060%20%D8%B4%20El-Khalifa%20El-Maamoun,%20Mansh%C3%AEyet%20el%20Bakri,%20Heliopolis,%20Cairo%20Governorate%204460043&ftid=0x14583f3980d2c3f5:0x3bcbe52024114da0&entry=gps&shh=CAE&lucs=,94297699,94284508,94231188,94280568,47071704,94218641,94282134,94286869&g_st=ic" target="_blank" class="btn-location">
+            🗺️ افتح الموقع على الخريطة
+        </a>
+
+        <div style="margin-top: 15px;">
+            <p>📞 تليفون: <span style="direction: ltr;">01023431095</span></p>
+            <p style="color: #25d366; font-weight: bold;">🟢 متاح واتساب 24 ساعة</p>
+        </div>
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid #333; width: 80%; margin: 20px auto;">
+    
+    <p style="color: red; font-weight: bold; font-size: 20px;">⚡ XP LAPTOP PARTS ⚡</p>
+    <p>© 2024 جميع الحقوق محفوظة لشركة XP</p>
 </footer>
 
 </body>
